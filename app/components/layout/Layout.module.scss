@@ -5,9 +5,19 @@ $bar-width: 20%;
 
 	> div:first-child,
 	> div:last-child {
-		@apply fixed top-0 bottom-0 overflow-y-auto;
+		@apply fixed top-0 bottom-0 overflow-y-scroll;
 		width: $bar-width;
 		max-width: 350px;
+
+		//Disable scrollbar
+		-ms-overflow-style: none; /* for Internet Explorer, Edge */
+		scrollbar-width: none; /* for Firefox */
+	}
+
+	//Disable scrollbar
+	> div:first-child::-webkit-scrollbar,
+	> div:last-child::-webkit-scrollbar {
+		display: none; /* for Chrome, Safari, and Opera */
 	}
 
 	> div:first-child {
