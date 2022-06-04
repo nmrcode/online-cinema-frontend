@@ -3,11 +3,15 @@ import { FC } from 'react'
 import Menu from '@/components/layout/Navigation/MenuContainer/Menu/Menu'
 import { usePopularGenres } from '@/components/layout/Navigation/MenuContainer/genres/usePopularGenres'
 
+import CustomSkeleton from '@/ui/skeleton-loader/CustomSkeleton'
+
 const GenreMenu: FC = () => {
 	const { isLoading, data } = usePopularGenres()
 
 	return isLoading ? (
-		<div className="mx-11 mb6"> Loading</div>
+		<div className="mx-11 mb6">
+			<CustomSkeleton count={5} className="h-7 mt-6" />
+		</div>
 	) : (
 		<Menu menu={{ title: 'По жанрам', items: data || [] }} />
 	)

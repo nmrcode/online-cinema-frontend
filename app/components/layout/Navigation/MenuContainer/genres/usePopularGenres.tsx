@@ -4,7 +4,7 @@ import { IMenuItem } from '@/components/layout/Navigation/MenuContainer/menu.int
 
 import { GenreService } from '@/services/genre.service'
 
-import { translitWord } from '@/utils/translitWord'
+import { translitWord } from '@/utils/string/translitWord'
 
 import { getGenreUrl } from '@/config/url.config'
 
