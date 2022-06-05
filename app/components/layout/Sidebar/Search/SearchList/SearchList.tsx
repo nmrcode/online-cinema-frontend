@@ -4,6 +4,8 @@ import { FC } from 'react'
 
 import { IMovie } from '@/shared/types/movie.types'
 
+import { translitWord } from '@/utils/string/translitWord'
+
 import { getMovieUrl } from '@/config/url.config'
 
 import s from './SearchList.module.scss'
@@ -13,7 +15,7 @@ const SearchList: FC<{ movies: IMovie[] }> = ({ movies }) => {
 		<div className={s.list}>
 			{movies.length ? (
 				movies.map((movie) => (
-					<Link key={movie._id} href={getMovieUrl(movie.slug)}>
+					<Link key={movie._id} href={getMovieUrl(translitWord(movie.slug))}>
 						<a>
 							<Image
 								src={movie.poster}
