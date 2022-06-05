@@ -1,8 +1,10 @@
 import { FC } from 'react'
 
 import { IHome } from '@/screens/Home/home.interface'
-import Meta from '@/utils/meta/Meta'
+
 import Heading from '@/ui/heading/Heading'
+
+import Meta from '@/utils/meta/Meta'
 
 const Home: FC<IHome> = () => {
 	return (
