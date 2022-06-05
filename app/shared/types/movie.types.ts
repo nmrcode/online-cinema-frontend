@@ -7,3 +7,31 @@ export interface IGenre {
 	description: string
 	icon: TMaterialIconName
 }
+
+export interface IParameters {
+	year: number
+	duration: number
+	country: string
+}
+
+export interface IActors {
+	_id: string
+	photo: string
+	name: string
+	countMovies: number
+	slug: string
+}
+
+export interface IMovie {
+	_id: string
+	poster: string
+	bigPoster: string
+	title: string
+	parameters: IParameters
+	genres: IGenre
+	actors: IActors
+	countOpened: number
+	videoUrl: string
+	rating: number
+	slug: string
+}

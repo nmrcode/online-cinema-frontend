@@ -1,9 +1,10 @@
 import { FC } from 'react'
 
 import Menu from '@/components/layout/Navigation/MenuContainer/Menu/Menu'
-import { usePopularGenres } from '@/components/layout/Navigation/MenuContainer/genres/usePopularGenres'
 
 import CustomSkeleton from '@/ui/skeleton-loader/CustomSkeleton'
+
+import { usePopularGenres } from '@/hooks/usePopularGenres'
 
 const GenreMenu: FC = () => {
 	const { isLoading, data } = usePopularGenres()
