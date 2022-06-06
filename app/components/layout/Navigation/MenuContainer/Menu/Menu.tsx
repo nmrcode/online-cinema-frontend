@@ -1,7 +1,7 @@
 import { FC } from 'react'
 
+import AuthItems from '@/components/layout/Navigation/MenuContainer/AuthItems/AuthItems'
 import MenuItem from '@/components/layout/Navigation/MenuContainer/Menu/MenuItem'
-import AuthItems from '@/components/layout/Navigation/MenuContainer/auth/AuthItems'
 import { IMenu } from '@/components/layout/Navigation/MenuContainer/menu.interface'
 
 import s from './Menu.module.scss'
