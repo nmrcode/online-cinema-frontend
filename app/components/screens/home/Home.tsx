@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import { IHome } from '@/screens/Home/home.interface'
+import { IHome } from '@/screens/home/home.interface'
 
 import Heading from '@/ui/heading/Heading'
 

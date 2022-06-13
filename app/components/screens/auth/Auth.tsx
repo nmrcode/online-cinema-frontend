@@ -1,9 +1,9 @@
 import { FC, useState } from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form'
 
-import AuthFields from '@/screens/Auth/AuthFields'
-import { IAuthInput } from '@/screens/Auth/auth.interface'
-import { useAuthRedirect } from '@/screens/Auth/useAuthRedirect'
+import AuthFields from '@/screens/auth/AuthFields'
+import { IAuthInput } from '@/screens/auth/auth.interface'
+import { useAuthRedirect } from '@/screens/auth/useAuthRedirect'
 
 import Button from '@/ui/form-elements/Button'
 import Heading from '@/ui/heading/Heading'
